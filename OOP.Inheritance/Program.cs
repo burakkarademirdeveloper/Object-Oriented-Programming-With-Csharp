@@ -34,3 +34,5 @@ Console.WriteLine("---------- base keyword ----------");
 var baseKeyword = new Rectangle(10, 20);
 
 Console.WriteLine("{0} , {1}",baseKeyword.X, baseKeyword.Y);
+
+//Sealed keyword: Tanımlandığı class ya da methodu kalıtımla devralınamaz hale getirir, mühürler.
