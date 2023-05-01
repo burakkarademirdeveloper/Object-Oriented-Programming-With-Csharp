@@ -8,6 +8,15 @@ public class Rectangle : Shape
         this.Width = width;
         this.Height = heigth;
     }
+    public Rectangle()
+    {
+        
+    }
+
+    public Rectangle(int x, int y) : base(x,y)
+    {
+        
+    }
 
     public override string ToString()
     {
@@ -18,4 +27,10 @@ public class Rectangle : Shape
     {
         Console.WriteLine("Rectangle:   X:{0}     Y:{1}     Heigth:{2}     Width:{3}", X, Y, Height, Width);
     }
+
+    public  void Calculate()
+    {
+        Console.WriteLine("Calculated by Rectangle...");
+    }
+
 }

@@ -13,3 +13,24 @@ _circle.Draw();
 _rectangle.Draw();
 
 new Rectangle(10, 20, 30, 40).Draw(); //Constructor ile aşırı yükleyerek tanımlama esnasında verilen değerleri override edilen method ile yazdırmak.
+
+var shapes = new List<Shape>() {
+    new Rectangle(10,20,30,40),
+    new Triangle(50,60,70,80),
+    new Circle(90,100,110,120),
+    new Square(130,140,150,160),
+};
+
+Console.WriteLine("---------- List<Shape>(); ----------");
+
+foreach (Shape shape in shapes)
+{
+    Console.WriteLine(shape);
+    shape.Draw();
+}
+
+Console.WriteLine("---------- base keyword ----------");
+
+var baseKeyword = new Rectangle(10, 20);
+
+Console.WriteLine("{0} , {1}",baseKeyword.X, baseKeyword.Y);
