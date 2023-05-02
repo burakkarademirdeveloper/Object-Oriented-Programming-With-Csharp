@@ -20,4 +20,18 @@ public class Shape
     {
         System.Console.WriteLine("Draw");
     }
+
+    public void WorkWithDifferentObjects(object obj)
+    {
+        Shape shapeFromParameter = obj as Shape; //as öperatörü gelen objenin Shape olabilme durumunu kontrol eder ve eğer olursa aktarır. Gerçekleşmezse null aktarır.
+        if (shapeFromParameter is null) 
+        {
+            Console.WriteLine("Null!");
+        }
+        else
+        {
+            shapeFromParameter.Draw();
+        }
+    }
+
 }

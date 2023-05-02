@@ -1,6 +1,7 @@
 ﻿
 public class Rectangle : Shape
 {
+    
     public Rectangle(int x, int y, int heigth, int width)
     {
         this.X = x;
